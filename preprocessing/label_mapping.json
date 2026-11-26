@@ -1,0 +1,27 @@
+{
+  "index_to_label": {
+    "0": "Am",
+    "1": "Cm",
+    "2": "Gm",
+    "3": "Um",
+    "4": "m1A",
+    "5": "m5C",
+    "6": "m5U",
+    "7": "m6A",
+    "8": "m6Am",
+    "9": "m7G",
+    "10": "Y",
+    "11": "AtoI"
+  },
+  "display_aliases": {
+    "Y": "pseudouridine",
+    "AtoI": "I"
+  },
+  "base_tokens": {
+    "unknown_or_padding": 0,
+    "A": 1,
+    "C": 2,
+    "G": 3,
+    "U_or_T": 4
+  }
+}

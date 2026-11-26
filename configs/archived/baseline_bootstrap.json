@@ -1,0 +1,26 @@
+{
+  "output": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/results/final_vs_baselines_bootstrap_2000",
+  "models": {
+    "final_no_pair": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/final_no_pair/seed42/test_predictions.tsv",
+    "multirm": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/baseline_multirm/seed42/test_predictions.tsv",
+    "transrnam": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/baseline_transrnam/seed42/test_predictions.tsv",
+    "evormd_safe": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/baseline_evormd_safe/seed42/test_predictions.tsv"
+  },
+  "comparisons": [
+    [
+      "final_no_pair_vs_multirm",
+      "final_no_pair",
+      "multirm"
+    ],
+    [
+      "final_no_pair_vs_transrnam",
+      "final_no_pair",
+      "transrnam"
+    ],
+    [
+      "final_no_pair_vs_evormd_safe",
+      "final_no_pair",
+      "evormd_safe"
+    ]
+  ]
+}

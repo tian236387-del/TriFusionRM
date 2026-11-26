@@ -1,0 +1,13 @@
+{
+  "analysis": "Frozen seed42 no-pair and matched reference versus sequence-only; supplementary analysis of a previously inspected test set",
+  "output": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/results/primary_seed42_bootstrap_2000",
+  "models": {
+    "final_no_pair": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/final_no_pair/seed42/test_predictions.tsv",
+    "sequence_only": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/sequence_only/seed42/test_predictions.tsv",
+    "reference_full": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/reference_full/seed42/test_predictions.tsv"
+  },
+  "comparisons": [
+    ["final_no_pair_vs_sequence_only", "final_no_pair", "sequence_only"],
+    ["final_no_pair_vs_reference_full", "final_no_pair", "reference_full"]
+  ]
+}

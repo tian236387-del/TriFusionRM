@@ -1,0 +1,28 @@
+{
+  "models": {
+    "final_no_pair": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/v2/final_no_pair/seed17/test_predictions.tsv",
+    "sequence_only": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/v2/sequence_only/seed17/test_predictions.tsv",
+    "baseline_multirm": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/v2/baseline_multirm/seed17/test_predictions.tsv",
+    "baseline_transrnam": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/v2/baseline_transrnam/seed17/test_predictions.tsv"
+  },
+  "comparisons": [
+    [
+      "final_vs_sequence_only",
+      "final_no_pair",
+      "sequence_only"
+    ],
+    [
+      "final_vs_baseline_multirm",
+      "final_no_pair",
+      "baseline_multirm"
+    ],
+    [
+      "final_vs_baseline_transrnam",
+      "final_no_pair",
+      "baseline_transrnam"
+    ]
+  ],
+  "output": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/results/frozen_v2_seed17_matched_bootstrap_2000",
+  "dataset": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/data/frozen_v2/master.tsv",
+  "split": "split_v2_cluster"
+}

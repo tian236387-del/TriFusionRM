@@ -1,0 +1,10 @@
+{
+  "name": "v2_sequence_only_seed17",
+  "gpu": 0,
+  "template": "models/sequence_only/seed42/training_config.json",
+  "out_dir": "models/v2/sequence_only/seed17",
+  "dataset_version": "frozen_v2",
+  "overrides": {
+    "seed": 17
+  }
+}

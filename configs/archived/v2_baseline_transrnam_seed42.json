@@ -1,0 +1,8 @@
+{
+  "name": "v2_baseline_transrnam_seed42",
+  "gpu": 1,
+  "template": "models/baseline_transrnam/seed42/training_config.json",
+  "out_dir": "models/v2/baseline_transrnam/seed42",
+  "dataset_version": "frozen_v2",
+  "seed": 42
+}

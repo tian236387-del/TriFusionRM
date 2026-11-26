@@ -1,0 +1,10 @@
+{
+  "name": "no_pair_shuffled_bins_seed42",
+  "gpu": 1,
+  "template": "models/final_no_pair/seed42/training_config.json",
+  "out_dir": "models/no_pair_shuffled_bins/seed42",
+  "overrides": {
+    "seed": 42,
+    "shuffle_rbp_bins": true
+  }
+}

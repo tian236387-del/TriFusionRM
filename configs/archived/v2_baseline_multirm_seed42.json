@@ -1,0 +1,8 @@
+{
+  "name": "v2_baseline_multirm_seed42",
+  "gpu": 0,
+  "template": "models/baseline_multirm/seed42/training_config.json",
+  "out_dir": "models/v2/baseline_multirm/seed42",
+  "dataset_version": "frozen_v2",
+  "seed": 42
+}

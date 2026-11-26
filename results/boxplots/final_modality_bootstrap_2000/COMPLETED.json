@@ -1,0 +1,64 @@
+{
+  "analysis": "final_modality_bootstrap_2000",
+  "models": {
+    "no_pair_shuffled_rbp": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/no_pair_shuffled_rbp/seed42/test_predictions.tsv",
+    "no_pair_shuffled_structure": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/no_pair_shuffled_structure/seed42/test_predictions.tsv",
+    "no_pair_shuffled_bins": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/no_pair_shuffled_bins/seed42/test_predictions.tsv",
+    "no_pair_sequence_structure": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/no_pair_sequence_structure/seed42/test_predictions.tsv",
+    "final_no_pair": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/final_no_pair/seed42/test_predictions.tsv",
+    "sequence_only": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/sequence_only/seed42/test_predictions.tsv",
+    "reference_sequence_rbp": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/reference_sequence_rbp/seed42/test_predictions.tsv"
+  },
+  "comparisons": [
+    [
+      "final_vs_sequence",
+      "final_no_pair",
+      "sequence_only"
+    ],
+    [
+      "structure_increment",
+      "no_pair_sequence_structure",
+      "sequence_only"
+    ],
+    [
+      "rbp_increment",
+      "reference_sequence_rbp",
+      "sequence_only"
+    ],
+    [
+      "real_vs_shuffled_rbp",
+      "final_no_pair",
+      "no_pair_shuffled_rbp"
+    ],
+    [
+      "real_vs_shuffled_structure",
+      "final_no_pair",
+      "no_pair_shuffled_structure"
+    ],
+    [
+      "real_vs_shuffled_bins",
+      "final_no_pair",
+      "no_pair_shuffled_bins"
+    ],
+    [
+      "structure_given_rbp",
+      "final_no_pair",
+      "reference_sequence_rbp"
+    ],
+    [
+      "rbp_given_structure",
+      "final_no_pair",
+      "no_pair_sequence_structure"
+    ]
+  ],
+  "output": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/results/final_modality_bootstrap_2000",
+  "replicates": 2000,
+  "attempted_replicates": 2159,
+  "n_rows": 108211,
+  "n_clusters": 80831,
+  "resampling_unit": "cdhit80_cluster_id",
+  "conditioning": "Reject draws omitting positives for any evaluable class.",
+  "probabilities": "Raw archived float32 probabilities; no probability-floor clipping.",
+  "random_seed": 20261028,
+  "time": 1793188782.406472
+}

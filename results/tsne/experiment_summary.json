@@ -1,0 +1,65 @@
+{
+  "n_sites": 1912,
+  "models": {
+    "MultiRM": {
+      "checkpoint": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/baseline_multirm/seed42/model.pt",
+      "checkpoint_sha256": "a5b15fba438f19572e2ad983212d008ec2df690a7071d00270efbc41f16425c3",
+      "feature_layer": "class-conditioned Bahdanau attention contexts averaged across classes",
+      "feature_dimensions": 512,
+      "logit_dimensions": 12,
+      "objective": "bce",
+      "max_prediction_difference": 3.4868717193603516e-06,
+      "top1_agreement": 1.0
+    },
+    "TransRNAm": {
+      "checkpoint": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/baseline_transrnam/seed42/model.pt",
+      "checkpoint_sha256": "f2b0cc9b2babd3b9c071041b813a1cc0e0bbdc6072536c6673b8662b7400ce1c",
+      "feature_layer": "Transformer and CNN concatenation before class heads",
+      "feature_dimensions": 768,
+      "logit_dimensions": 12,
+      "objective": "bce",
+      "max_prediction_difference": 2.5510787963867188e-05,
+      "top1_agreement": 1.0
+    },
+    "EvoRMD": {
+      "checkpoint": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/baseline_evormd_safe/seed42/model.pt",
+      "checkpoint_sha256": "c1d3d3c2af5ece149becdd16c3c108eba89417b3f5b052ae36d5275a5535adbe",
+      "feature_layer": "RNA-FM and safe-context attention pool before classifier",
+      "feature_dimensions": 800,
+      "logit_dimensions": 12,
+      "objective": "ce",
+      "max_prediction_difference": 1.3470649719238281e-05,
+      "top1_agreement": 1.0
+    }
+  },
+  "class_counts": {
+    "Am": 38,
+    "Cm": 74,
+    "Gm": 27,
+    "Um": 165,
+    "m1A": 74,
+    "m5C": 400,
+    "m5U": 3,
+    "m6A": 400,
+    "m7G": 70,
+    "Y": 261,
+    "AtoI": 400
+  },
+  "same_base_count": 874,
+  "tsne": {
+    "seed": 42,
+    "perplexities": [
+      20,
+      30,
+      50
+    ],
+    "init": "pca",
+    "learning_rate": "auto",
+    "metric": "euclidean",
+    "PCA_max_dimensions": 50,
+    "same_sites_for_every_model": true,
+    "embeddings_fitted_independently": true,
+    "main_figure": "logits, not penultimate features",
+    "TriFusionRM_penultimate_note": "sequence+structure main_context before RBP logit residual"
+  }
+}

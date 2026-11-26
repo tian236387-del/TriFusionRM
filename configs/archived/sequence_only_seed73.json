@@ -1,0 +1,9 @@
+{
+  "name": "sequence_only_seed73",
+  "gpu": 1,
+  "template": "models/sequence_only/seed42/training_config.json",
+  "out_dir": "models/sequence_only/seed73",
+  "overrides": {
+    "seed": 73
+  }
+}

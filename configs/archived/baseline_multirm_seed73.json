@@ -1,0 +1,6 @@
+{
+  "name": "baseline_multirm_seed73",
+  "seed": 73,
+  "template": "models/baseline_multirm/seed42/training_config.json",
+  "out_dir": "models/baseline_multirm/seed73"
+}

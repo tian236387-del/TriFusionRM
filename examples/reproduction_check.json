@@ -1,0 +1,10 @@
+{
+  "status": "PASSED",
+  "sites": 22,
+  "maximum_absolute_probability_error": 8.370727300643921e-06,
+  "tolerance": 1e-05,
+  "top1_agreement": 1.0,
+  "device": "cpu",
+  "torch": "2.8.0+cu128",
+  "pair_edges_disabled": true
+}

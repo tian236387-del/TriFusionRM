@@ -1,0 +1,27 @@
+{
+  "input_dataset": "rmbase12_work/datasets/rmbase_multirm12_hg38_41nt_all_sites_cdhit80_strict_splits.tsv",
+  "output_dataset": "rmbase12_work/datasets/rmbase_multirm12_hg38_41_101_201nt_cdhit80_common.tsv",
+  "fasta": "/home/nefu1020220084/summer/dataset/reference/hg38/hg38.fa",
+  "lengths": [
+    101,
+    201
+  ],
+  "total_rows": 1087461,
+  "written_rows": 1082044,
+  "status_counts": {
+    "101:missing_or_out_of_bounds": 5396,
+    "201:missing_or_out_of_bounds": 5397,
+    "101:ok": 1082056,
+    "201:ok": 1082044,
+    "201:invalid_base": 20,
+    "101:invalid_base": 9
+  },
+  "validation_existing_41": {
+    "checked": 1087461,
+    "matched": 1082065,
+    "mismatched": 5396,
+    "missing_existing": 0
+  },
+  "drop_invalid": true,
+  "drop_mismatched_41": true
+}

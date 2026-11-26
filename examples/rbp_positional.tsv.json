@@ -1,0 +1,84 @@
+{
+  "dataset": "rmbase12_work/datasets/rmbase_multirm12_hg38_41_101_201nt_cdhit80_common.tsv",
+  "manifest": "rmbase11_full_work/rbp_encode_eclip_all/encode_eclip_top30_manifest.tsv",
+  "output": "rmbase12_work/rbp_encode_eclip_all/rmbase_multirm12_encode_eclip_top30_rbp_positional_features.tsv",
+  "site_count": 1082044,
+  "rbps": [
+    "AGGF1",
+    "AQR",
+    "BCLAF1",
+    "BUD13",
+    "DDX6",
+    "DGCR8",
+    "DROSHA",
+    "FAM120A",
+    "FASTKD2",
+    "GRWD1",
+    "HLTF",
+    "HNRNPA1",
+    "IGF2BP1",
+    "KHSRP",
+    "LARP4",
+    "LIN28B",
+    "LSM11",
+    "PPIG",
+    "PRPF8",
+    "RBFOX2",
+    "RBM15",
+    "SND1",
+    "TIA1",
+    "U2AF1",
+    "U2AF2",
+    "UCHL5",
+    "XRN2",
+    "YBX3",
+    "ZC3H11A",
+    "ZNF622"
+  ],
+  "bins": [
+    {
+      "label": "m200_m100",
+      "left": -200,
+      "right": -100
+    },
+    {
+      "label": "m100_m50",
+      "left": -100,
+      "right": -50
+    },
+    {
+      "label": "m50_0",
+      "left": -50,
+      "right": 0
+    },
+    {
+      "label": "0_50",
+      "left": 0,
+      "right": 50
+    },
+    {
+      "label": "50_100",
+      "left": 50,
+      "right": 100
+    },
+    {
+      "label": "100_200",
+      "left": 100,
+      "right": 200
+    }
+  ],
+  "features": [
+    "presence",
+    "peak_count_log1p",
+    "max_signal_log1p",
+    "mean_signal_log1p",
+    "summit_closeness_200",
+    "overlap_fraction",
+    "strand_match_fraction"
+  ],
+  "shape": [
+    30,
+    6,
+    7
+  ]
+}

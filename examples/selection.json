@@ -1,0 +1,17 @@
+{
+  "rule": "First two archived test predictions per supported class; demonstration only, not a performance subset.",
+  "counts": {
+    "Am": 2,
+    "Cm": 2,
+    "Gm": 2,
+    "Um": 2,
+    "m1A": 2,
+    "m5C": 2,
+    "m5U": 2,
+    "m6A": 2,
+    "m7G": 2,
+    "Y": 2,
+    "AtoI": 2
+  },
+  "source": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/exports/StructDualRM_final_no_pair_20261106/historical/test_predictions_seed42.tsv"
+}

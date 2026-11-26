@@ -1,0 +1,15 @@
+{
+  "name": "matched_gene_biotype_region_rbp_shuffle_seed42",
+  "template": "models/final_no_pair/seed42/training_config.json",
+  "out_dir": "models/matched_rbp_shuffle_gene_validated/seed42",
+  "overrides": {
+    "seed": 42,
+    "disable_pair_edges": true,
+    "shuffle_rbp": false,
+    "shuffle_rbp_bins": false,
+    "use_rbp": false,
+    "use_rbp_positional": true,
+    "disable_structure": false,
+    "resume": false
+  }
+}

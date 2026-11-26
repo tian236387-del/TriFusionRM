@@ -1,0 +1,155 @@
+{
+  "experiment": "motif-directed perturbation vs matched random disruption",
+  "checkpoint": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/final_no_pair/seed42/model.pt",
+  "config": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/models/final_no_pair/seed42/centralized_config.json",
+  "test_dataset": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/data/frozen_v1/test_inputs_attribution.tsv",
+  "structure": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/data/frozen_v1/rnafold.tsv",
+  "rbp_positional": "/home/nefu1020220084/summer/StructDualRM/BIB_strengthening_20261028/data/frozen_v1/rbp_positional.tsv",
+  "device": "cuda",
+  "seed": 20261011,
+  "replicates_per_condition": 10,
+  "bootstrap_replicates": 2000,
+  "sign_permutation_replicates": 10000,
+  "selection": "one motif-positive site per source_class/motif/CD-HIT80 cluster, lexicographically smallest site_id",
+  "motif_window": "central 21 nt of sequence_41nt; occurrence closest to center selected",
+  "center_index_41_0based": 20,
+  "center_base_mutation": "forbidden",
+  "synchronized_offsets": "41/101/201 nt windows use the same offset relative to their center",
+  "random_region": "same motif length, central 21 nt, no overlap with motif, excludes center; minimize difference between motif and control absolute distance to center",
+  "modification_statistics": "Average motif-site contrasts within each cluster first; bootstrap and sign-permute independent cluster means. Secondary descriptive metrics retain motif-site weighting.",
+  "target_classes": [
+    "Am",
+    "Um",
+    "m1A",
+    "m5C",
+    "m6A",
+    "Psi",
+    "I"
+  ],
+  "source_target_classes": [
+    "Am",
+    "Um",
+    "m1A",
+    "m5C",
+    "m6A",
+    "Y",
+    "AtoI"
+  ],
+  "manifest_rows": 20537,
+  "unique_sites": 16050,
+  "summary_rows": 20,
+  "output_files": {
+    "manifest": "motif_attribution_site_manifest.tsv",
+    "long_predictions": "motif_attribution_perturbation_predictions.tsv",
+    "per_site": "motif_attribution_per_site.tsv",
+    "motif_summary": "motif_attribution_summary.tsv",
+    "modification_summary": "modification_attribution_summary.tsv"
+  },
+  "class_names": [
+    "Am",
+    "Cm",
+    "Gm",
+    "Um",
+    "m1A",
+    "m5C",
+    "m5U",
+    "m6A",
+    "m6Am",
+    "m7G",
+    "Y",
+    "AtoI"
+  ],
+  "class_aliases": {
+    "Y": "Psi",
+    "AtoI": "I"
+  },
+  "rbp_shape": [
+    30,
+    6,
+    7
+  ],
+  "rbp_metadata": {
+    "dataset": "rmbase12_work/datasets/rmbase_multirm12_hg38_41_101_201nt_cdhit80_common.tsv",
+    "manifest": "rmbase11_full_work/rbp_encode_eclip_all/encode_eclip_top30_manifest.tsv",
+    "output": "rmbase12_work/rbp_encode_eclip_all/rmbase_multirm12_encode_eclip_top30_rbp_positional_features.tsv",
+    "site_count": 1082044,
+    "rbps": [
+      "AGGF1",
+      "AQR",
+      "BCLAF1",
+      "BUD13",
+      "DDX6",
+      "DGCR8",
+      "DROSHA",
+      "FAM120A",
+      "FASTKD2",
+      "GRWD1",
+      "HLTF",
+      "HNRNPA1",
+      "IGF2BP1",
+      "KHSRP",
+      "LARP4",
+      "LIN28B",
+      "LSM11",
+      "PPIG",
+      "PRPF8",
+      "RBFOX2",
+      "RBM15",
+      "SND1",
+      "TIA1",
+      "U2AF1",
+      "U2AF2",
+      "UCHL5",
+      "XRN2",
+      "YBX3",
+      "ZC3H11A",
+      "ZNF622"
+    ],
+    "bins": [
+      {
+        "label": "m200_m100",
+        "left": -200,
+        "right": -100
+      },
+      {
+        "label": "m100_m50",
+        "left": -100,
+        "right": -50
+      },
+      {
+        "label": "m50_0",
+        "left": -50,
+        "right": 0
+      },
+      {
+        "label": "0_50",
+        "left": 0,
+        "right": 50
+      },
+      {
+        "label": "50_100",
+        "left": 50,
+        "right": 100
+      },
+      {
+        "label": "100_200",
+        "left": 100,
+        "right": 200
+      }
+    ],
+    "features": [
+      "presence",
+      "peak_count_log1p",
+      "max_signal_log1p",
+      "mean_signal_log1p",
+      "summit_closeness_200",
+      "overlap_fraction",
+      "strand_match_fraction"
+    ],
+    "shape": [
+      30,
+      6,
+      7
+    ]
+  }
+}

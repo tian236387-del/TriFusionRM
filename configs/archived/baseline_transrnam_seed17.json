@@ -1,0 +1,6 @@
+{
+  "name": "baseline_transrnam_seed17",
+  "seed": 17,
+  "template": "models/baseline_transrnam/seed42/training_config.json",
+  "out_dir": "models/baseline_transrnam/seed17"
+}
